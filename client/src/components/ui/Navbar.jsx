@@ -13,18 +13,16 @@ import {
 import DarkMode from "@/pages/DarkMode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 // sooner
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const user = true;
@@ -50,8 +48,8 @@ const Navbar = () => {
                 <DropdownMenuLabel>E-Learning</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
-                  <DropdownMenuItem>My Learning</DropdownMenuItem>
-                  <DropdownMenuItem>Edit Profile</DropdownMenuItem>
+                  <DropdownMenuItem><Link to="myLearning">My Learning</Link>  </DropdownMenuItem>
+                  <DropdownMenuItem> <Link to="profile">Edit Profile</Link></DropdownMenuItem>
                   <DropdownMenuItem>Log Out</DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
